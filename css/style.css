@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/********** INICIO CAIXA CABEÇALHO **********/
+
+#cabecalho {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #639b83;
+    box-shadow: 10px 5px 5px #a1a0a0;
+}
+
+.caixa_logo {
+    width: 119px;
+    height: 119px;
+    border-radius: 50%;
+    border: 2px solid #4a7965;
+}
+
+.img_logo img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+    color: #71b095;
+}
+
+/********** FIM CAIXA CABEÇALHO **********/
+
+/****/
+
+/****/
+
+/********** INICIO CAIXA WHATS CONTATO **********/
+
+.caixa_whats_contato {
+    width: 176px;
+    height: 130px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.entra_contato p {
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+/********** FIM CAIXA WHATS CONTATO **********/
+
+/****/
+
+/****/
+
+/********** INICIO SEÇÃO HOME **********/
+
+#home {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.caixa_left {
+    width: 560px;
+    height: 445px;
+}
+
+.caixa_titulo_produto {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_titulo_produto h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 37px;
+}
+
+.sub_titulo {
+    width: 230px;
+    height: 50px;
+}
+
+.sub_titulo h3 {
+    color: #4a7965;
+    padding-top: 5px;
+}
+
+.caixa_descricao_produto {
+    width: 100%;
+    height: 260px;
+}
+
+.caixa_descricao_produto p {
+    font-size: 23px;
+    padding-top: 20px;
+}
+
+.caixa_right {
+    width: 560px;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_imagem {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    #home {
+        flex-direction: column;
+        padding-top: 310px;
+    }
+}
+
+@media (max-width: 300px) {
+    .caixa_whats_contato {
+        display: none;
+    }
+    #cabecalho {
+        width: 320px;
+    }
+   
+}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: x-large;
+}
+
+img {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/********** FIM SEÇÃO HOME **********/
+
+/****/
+
+/****/
+
+/********** INICIO SEÇÃO SLIDE **********/
+
+#secao_slide {
+    width: 100%;
+    height: 95vh;
+}
+
+.content {
+    margin-left: 39.4rem;
+    width: 100%;
+    height: 520px;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    margin-top: 300px;
+}
+
+.content .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 0px;
+    left: 560px;
+    display: flex;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+
+
+/********** INICIO SEÇÃO SLIDE **********/
+
+/****/
+
+/****/
+
+/********** INICIO SEÇÃO FOOTER **********/
+
+footer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -240px;
+    background: #639b83;
+}
+
+/**** INICIO CAIXA LEFT FOOTER ****/
+
+.caixa_left_footer {
+    width: 258px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa_logo_footer {
+    width: 119px;
+    height: 119px;
+    border-radius: 50%;
+    border: 2px solid #4a7965;
+}
+
+.caixa_logo_footer img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+    color: #71b095;
+}
+
+.descricao_logo_footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.descricao_logo_footer h5 {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #eeeeee;
+}
+
+/**** FIM CAIXA LEFT FOOTER ****/
+
+/****/
+
+/**** INICIO CAIXA CENTER FOOTER ****/
+
+.caixa_location {
+    width: 300px;
+    height: 150px;
+}
+
+.caixa_endereco {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.caixa_endereco a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.caixa_gmail {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.caixa_gmail p {
+    color: #eeeeee;
+}
+
+.caixa_whats_footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.caixa_whats_footer a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+/**** FIM CAIXA CENTER FOOTER ****/
+
+/****/
+
+.caixa_right_footer {
+    position: relative;
+    width: 270px;
+    height: 220px;
+}
+
+iframe {
+    width: 270px;
+    height: 220px;
+    border-radius: 15px;
+}
+
+
+
+
+
+/********** FIM SEÇÃO FOOTER **********/
+
+
+
+
